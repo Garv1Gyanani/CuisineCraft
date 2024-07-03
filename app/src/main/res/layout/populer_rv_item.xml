@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="30dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pizza_sample"
+            android:id="@+id/populer_img"
+            android:scaleType="centerCrop"
+            android:foreground="?android:attr/selectableItemBackground"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/img_gradent"
+            android:src="@drawable/image_btm_overlay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/populer_txt"
+            android:text="Sample text"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinslack"
+            android:layout_gravity="bottom"
+            android:paddingStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:paddingBottom="52dp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/popular_time"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:text="🕜20Min"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppinslack"
+            android:textSize="11sp"
+            android:maxLength="7"
+            android:layout_marginBottom="7dp"/>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
